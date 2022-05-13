@@ -36,3 +36,16 @@ body {
 .button i {
     transition: .2s;
 }
+
+.button::before {
+    position: absolute;
+    content: '';
+    width: calc(1.8 * 70px);
+    height: 200%;
+    transform-origin: center;
+    background-color: #14ab8a;
+    border-radius: 15px;
+    transition: .5s cubic-bezier(.25,1.39,.58,1.39);
+    transform: skew(45deg) translate(-125px, 50px);
+    z-index: -1;
+}
