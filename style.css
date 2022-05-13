@@ -49,3 +49,12 @@ body {
     transform: skew(45deg) translate(-125px, 50px);
     z-index: -1;
 }
+
+.button:hover i{
+    transform: scale(1.2);
+    color: white;
+}
+
+.button:hover::before {
+    transform: skew(45deg) translate(0,0);
+}
